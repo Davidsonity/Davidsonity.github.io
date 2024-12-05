@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Emuejevoke</strong> <span>Eshemitan</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Mitan Energy AI Chatbot</h1>
+									</header>
+									<span class="image main"><img src="https://private-user-images.githubusercontent.com/96771321/392742242-1fdb5a6d-8e46-4221-98d7-783207246b35.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzM0MDAxMjgsIm5iZiI6MTczMzM5OTgyOCwicGF0aCI6Ii85Njc3MTMyMS8zOTI3NDIyNDItMWZkYjVhNmQtOGU0Ni00MjIxLTk4ZDctNzgzMjA3MjQ2YjM1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjA1VDExNTcwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIzOWNjYTU4N2IxN2RmZDY0MzE1MDFhY2IwY2E3ZTU5ODdkNDRiNjA0M2MxOGJiZjUxODk0OTFlZGEzN2M5ZjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.RerTrG1ET-dUhRzi-KxBgE2pFAQMemxad-3aodbuYgU" alt="" /></span>									
+									<p>In the fast-paced world of energy solutions, companies like Mitan Energy are embracing 
+										cutting-edge technologies to improve customer interactions and streamline access to company 
+										information. One such innovation is the deployment of an AI-powered chatbot using advanced tools 
+										like LangChain, Google Generative AI, and LangGraph. This article delves into the creation and 
+										deployment of the Mitan Energy chatbot and how it transforms customer engagement.
+									</p>									
+									<ul class="actions">
+										<li><a href="https://mitanenergyai.streamlit.app/" class="button">Interact with the bot</a></li>
+									</ul>
+									<div class="article-section">
+										<h2 class="section-title">The Vision: Enhancing Customer Interactions</h2>
+										<p>Mitan Energy envisioned a chatbot that could:</p>
+										<ul>
+											<li>Answer customer inquiries promptly and accurately.</li>
+											<li>Provide detailed information about the company's services, products, and history.</li>
+											<li>Streamline internal document retrieval for employees.</li>
+										</ul>
+										<p>To achieve these goals, the chatbot integrates advanced natural language processing (NLP) with company-specific data to deliver precise, concise, and context-aware responses.</p>
+									</div>
+								
+									<div class="article-section">
+										<h2 class="section-title">Building the Chatbot</h2>
+										<p>The chatbot leverages <strong>LangChain</strong> for orchestration, <strong>Google Generative AI</strong> for powerful conversational capabilities, and <strong>LangGraph</strong> for advanced decision-making frameworks. Below is an overview of the key components.</p>
+								
+										<h3>1. Document Loading and Vectorization</h3>
+										<p>The chatbot uses the Mitan Energy Company Profile PDF as its primary knowledge base. With tools like <code>PyPDFLoader</code> and <code>RecursiveCharacterTextSplitter</code>, the document is split into digestible chunks. Each chunk is then embedded into a vector store using <strong>Google Generative AI embeddings</strong>, enabling efficient semantic search.</p>
+								
+										<h3>2. Conversational AI Integration</h3>
+										<p>The conversational backbone of the chatbot is powered by <strong>ChatGoogleGenerativeAI</strong>, which ensures a human-like and contextual interaction. The language model responds in a concise manner, adhering to company policies to stay on-topic and relevant.</p>
+								
+										<h3>3. Retrieval-Augmented Generation (RAG)</h3>
+										<p>RAG enables the chatbot to retrieve company-specific information dynamically. By combining retrieval tools with a generative AI model, the chatbot ensures that responses are both accurate and grounded in the company's knowledge base.</p>
+								
+										<h3>4. Memory and Personalization</h3>
+										<p>With the <strong>MemorySaver</strong> module, the chatbot remembers past interactions within a session. This allows for more personalized and coherent conversations, enhancing user satisfaction.</p>
+									</div>
+								
+									<div class="article-section">
+										<h2 class="section-title">Deploying the Chatbot</h2>
+										<p>The chatbot was deployed using <strong>Streamlit</strong>, a powerful framework for building interactive web applications. Below are the steps followed during deployment:</p>
+								
+										<h3>1. Secure API Integration</h3>
+										<p>API keys for LangChain and Google Generative AI are securely managed using Streamlit’s secrets manager. This ensures robust security and easy scalability.</p>
+								
+										<h3>2. Local Testing and Debugging</h3>
+										<p>Before deployment, the chatbot was tested locally to verify document retrieval, conversation flow, and error handling. This stage ensured the app was ready for real-world interactions.</p>
+								
+										<h3>3. Cloud Deployment</h3>
+										<p>To make the chatbot accessible to employees and customers, it was deployed on <strong>Streamlit Community Cloud</strong>, allowing seamless integration into the company’s digital platforms.</p>
+									</div>
+								
+									<div class="article-section">
+										<h2 class="section-title">Features of the Mitan Energy Chatbot</h2>
+										<p>The chatbot offers several advanced features, including:</p>
+								
+										<h3>1. Instant Document Retrieval</h3>
+										<p>Customers and employees can query the bot for detailed insights into Mitan Energy's services, operational history, or technical details.</p>
+								
+										<h3>2. Human-Like Conversations</h3>
+										<p>With its generative capabilities, the bot responds in a conversational tone, making interactions more engaging and less robotic.</p>
+								
+										<h3>3. Customizable Design</h3>
+										<p>The chatbot interface features Mitan Energy’s branding, including its logo and color scheme, ensuring a cohesive user experience.</p>
+								
+										<h3>4. Scalable Memory</h3>
+										<p>By using a unique session identifier, the chatbot handles multiple simultaneous conversations without compromising context or accuracy.</p>
+									</div>
+								
+									<div class="article-section">
+										<h2 class="section-title">The Impact on Mitan Energy</h2>
+										<p>Since its deployment, the chatbot has significantly improved customer interactions and internal processes. Key benefits include:</p>
+										<ul>
+											<li><strong>Enhanced Customer Experience:</strong> Customers can get immediate answers to queries without navigating through dense documentation.</li>
+											<li><strong>Operational Efficiency:</strong> Employees save time by retrieving specific information instantly.</li>
+											<li><strong>Scalability:</strong> The chatbot can handle increasing queries without additional staffing costs.</li>
+										</ul>
+									</div>
+								
+									<div class="article-section">
+										<h2 class="section-title">Future Enhancements</h2>
+										<p>Looking ahead, Mitan Energy plans to expand the chatbot’s capabilities by integrating:</p>
+										<ul>
+											<li><strong>Multi-Language Support:</strong> To serve a global customer base.</li>
+											<li><strong>Advanced Analytics:</strong> To gain insights into customer queries and improve service delivery.</li>
+											<li><strong>Additional Knowledge Bases:</strong> To include more documents, FAQs, and operational data.</li>
+										</ul>
+									</div>
+								
+									<div class="article-section">
+										<h2 class="section-title">Conclusion</h2>
+										<p>The Mitan Energy chatbot exemplifies how AI can revolutionize customer engagement and internal workflows. By leveraging state-of-the-art tools and frameworks, Mitan Energy has positioned itself as a leader in innovation, ensuring that it meets the needs of its customers and employees in a competitive industry.</p>
+										<p>With ongoing enhancements, the chatbot is set to remain a cornerstone of Mitan Energy’s digital transformation journey.</p>
+									</div>
+								</div>
+							</section>
+
+					</div>
+
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="mailto:eshemitanvoke@gmail.com">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="mailto:eshemitanvoke@gmail.com">eshemitanvoke@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>+234 902 436 2357</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>location</h3>
+										<span>Lagos, Nigeria</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://twitter.com/davidsonity_" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.instagram.com/davidsonity_/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/Davidsonity" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/emuejevoke-eshemitan/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
